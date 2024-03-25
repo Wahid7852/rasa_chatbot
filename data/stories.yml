@@ -1,0 +1,69 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+
+- story: Greet and ask for college name
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_college_name
+    - action: utter_college_name
+
+- story: Ask about available courses
+  steps:
+    - intent: ask_available_courses
+    - action: utter_available_courses
+
+- story: Ask about current toppers
+  steps:
+    - intent: ask_current_toppers
+    - action: utter_current_toppers
+    - action: utter_course_details
+    - action: utter_seats_all_courses
+
+- story: Ask about previous year's toppers
+  steps:
+    - intent: ask_previous_toppers
+    - action: utter_previous_toppers
+
+- story: Ask about departments count
+  steps:
+    - intent: ask_departments_count
+    - action: utter_departments_count
+
+- story: Ask about undergraduate courses
+  steps:
+    - intent: ask_undergraduate_courses
+    - action: utter_undergraduate_courses
+    - action: utter_course_details
+    - action: utter_seats_all_courses
+
+- story: Ask about postgraduate courses
+  steps:
+    - intent: ask_postgraduate_courses
+    - action: utter_postgraduate_courses
+    - action: utter_course_details
+    - action: utter_seats_all_courses

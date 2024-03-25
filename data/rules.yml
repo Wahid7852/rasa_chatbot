@@ -1,0 +1,61 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Handle unknown input
+    steps:
+      - action: utter_default
+
+  - rule: Answer college name question
+    steps:
+      - intent: ask_college_name
+      - action: utter_college_name
+
+  - rule: Answer available courses question
+    steps:
+      - intent: ask_available_courses
+      - action: utter_available_courses
+
+  - rule: Answer current toppers question
+    steps:
+      - intent: ask_current_toppers
+      - action: utter_current_toppers
+
+  - rule: Answer previous year's toppers question
+    steps:
+      - intent: ask_previous_toppers
+      - action: utter_previous_toppers
+
+  - rule: Answer departments count question
+    steps:
+      - intent: ask_departments_count
+      - action: utter_departments_count
+
+  - rule: Answer undergraduate courses question
+    steps:
+      - intent: ask_undergraduate_courses
+      - action: utter_undergraduate_courses
+
+  - rule: Answer postgraduate courses question
+    steps:
+      - intent: ask_postgraduate_courses
+      - action: utter_postgraduate_courses
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot

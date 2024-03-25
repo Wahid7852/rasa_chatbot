@@ -1,0 +1,124 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_college_name
+  examples: |
+    - What is the name of our college?
+    - Can you tell me the name of our college?
+    - Name of our college?
+
+- intent: ask_available_courses
+  examples: |
+    - What courses are available in our college?
+    - Can you list the courses offered in our college?
+    - Available courses?
+
+- intent: ask_seats_science
+  examples: |
+    - How many seats are available for science?
+    - Science seats availability?
+
+- intent: ask_seats_commerce
+  examples: |
+    - How many seats are available for commerce?
+    - Commerce seats availability?
+
+- intent: ask_seats_arts
+  examples: |
+    - How many seats are available for arts?
+    - Arts seats availability?
+
+- intent: ask_current_toppers
+  examples: |
+    - Who are the current toppers?
+    - Toppers of this year?
+
+- intent: ask_previous_toppers
+  examples: |
+    - Who were the previous years toppers?
+    - Toppers of last year?
+
+- intent: ask_departments_count
+  examples: |
+    - How many departments does our college have?
+    - Number of departments?
+
+- intent: ask_undergraduate_courses
+  examples: |
+    - What are the different undergraduate courses offered?
+    - List of undergraduate courses?
+
+- intent: ask_postgraduate_courses
+  examples: |
+    - What are the different postgraduate courses offered?
+    - List of postgraduate courses?

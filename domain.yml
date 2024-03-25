@@ -1,0 +1,84 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_college_name
+  - ask_available_courses
+  - ask_current_toppers
+  - ask_previous_toppers
+  - ask_departments_count
+  - ask_undergraduate_courses
+  - ask_postgraduate_courses
+
+actions:
+  - action_college_name
+  - action_available_courses
+  - action_course_details
+  - action_seats_all_courses
+  - action_current_toppers
+  - action_previous_toppers
+  - action_departments_count
+  - action_undergraduate_courses
+  - action_postgraduate_courses
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot for Jondhale college, Asangaon, powered by Rasa Framework."
+
+  utter_college_name:
+    - text: "Our college name is Jondhale College of Engineering, situated in Asangaon."
+
+  utter_available_courses:
+    - text: "The courses available in our college are Under-graduate Courses and Post-graduate courses"
+
+  utter_course_details:
+    - text: "The course duration is 4 years. The course fee is ₹80,000 for Open category and ₹50,000 for SC/ST category."
+
+  utter_seats_all_courses:
+    - text: "There are 60 seats available for all courses."
+
+  utter_current_toppers:
+    - text: "The current toppers are: \n 1st Ranker: Rasika Baviskar,\n 2nd Ranker: Parth mali,\n Third Ranker: Riya baviskar."
+
+  utter_previous_toppers:
+    - text: "The previous year's toppers are: \n 1st Ranker: Nitya rokde,\n 2nd Ranker: Prisha patel,\n Third Ranker: Wahid Khan."
+
+  utter_departments_count:
+    - text: "Our college has 6 departments. They are: \n 
+            Civil Engineering \n
+            Computer Engineering \n
+            Electronics & Telecommunication \n
+            Mechanical Engineering \n
+            Automation & Robotics \n
+            Master of Management Studies
+"
+  utter_undergraduate_courses:
+    - text: "The undergraduate course offered is Bachelor of Engineering (B.E.)"
+
+  utter_postgraduate_courses:
+    - text: "The postgraduate courses offered are Master of Engineering (M.E.) and Management"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
